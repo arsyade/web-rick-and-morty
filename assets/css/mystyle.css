@@ -1,0 +1,406 @@
+body {
+  background-color: #555555;
+}
+
+/* NAVBAR */
+
+.nav-list {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 18px 0;
+  background: rgb(0, 0, 0);
+  display: flex;
+ 
+}
+
+.item-bar {
+  margin: 0 21px;
+  list-style-type: none;
+}
+
+.toggle {
+  margin: 0 21px;
+  list-style-type: none;
+  display: none;
+}
+
+.navbar-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 50px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-btn{
+  font-size: 1em;
+  background: #000000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn:hover {
+  background-color: #202c23;
+}
+
+@media screen and (max-width: 912px) {
+  .navbar-list {
+    flex-wrap: wrap;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .navbar-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .nav-btn{
+    display: block;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-list {
+    flex-wrap: wrap;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .navbar-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .nav-btn{
+    display: block;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+/* TITLE */
+
+.title {
+  padding: 50px 50px;
+}
+
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Head-satu{
+  flex: 1;
+  margin-left: 31px;
+  margin: auto;
+}
+
+.Head-satuh1 {
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: black;
+  font-size: 3em;
+  
+}
+
+.Head-satup {
+  font-size: 1.5em;
+  margin-bottom: 51px;
+}
+
+.jelajahi {
+  border-radius: 13px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 21px;
+  background: #000000;
+  border: none;
+  padding: 21px 51px;
+  
+}
+
+.jelajahi a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.jelajahi:hover {
+  background: #2c0b0b;
+}
+
+.character {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+}
+
+.character-img {
+  width: 501px;
+  border-radius: 3%;
+}
+
+@media screen and (max-width: 992px) {
+  .title-container {
+    flex-direction: column;
+  }
+
+  .Head-satu{
+    margin: 0;
+    text-align: center;
+  }
+
+  .character {
+    margin-top: 51px;
+  }
+
+  .character-img {
+    width: 401px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-container {
+    flex-direction: column;
+  }
+
+  .Head-satu{
+    margin: 0;
+    text-align: center;
+  }
+
+  .character {
+    margin-top: 51px;
+  }
+
+  .character-img {
+    width: 201px;
+  }
+}
+
+/* Koleksi */
+.Koleksi {
+  margin-top: 26px;
+  background: white;
+  padding: 51px 0;
+  text-align: center;
+}
+
+.Koleksi h2 {
+  color: black;
+  font-size: 4em;
+  margin-bottom: 31px;
+}
+
+.Koleksi-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Koleksi-card {
+  margin-top: 21px;
+  background: white;
+  border-radius: 11px;
+  box-shadow: 0 0 11px #ccc;
+  display: flex;
+  flex-direction: column;
+  margin: 11px;
+  
+}
+
+.Koleksi-card:hover {
+  box-shadow: 0 0 15px #bbb;
+}
+
+.image-box {
+  width: 301px;
+  height: 301px;
+  overflow: hidden;
+  border-radius: 11px 11px 0 0;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.image-box:hover img {
+  transform: scale(1.2);
+}
+
+.Koleksi-card h3 {
+  color: black;
+  font-weight: bold;
+  margin: 6px 0 ;
+  text-align: center;
+}
+
+.Char {
+  text-decoration: underline;
+  margin: 0 11px 0 11px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  
+}
+
+.tipe {
+  font-size: larger;
+  margin: 0 21px 51px;
+  margin: 10px 10px 0 10px;
+  text-align: end;
+  color: black;
+  font-weight: bold;
+  
+}
+
+.Tombol {
+  font-size: 1em;
+  font-weight: bold;
+  border: 0;
+  margin: 10px 20px 20px;
+  background: #000000;
+  padding: 15px 80px;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+.Tombol:hover {
+  background: #3C8FE2;
+  box-shadow: 0 0 15px #bbb;
+}
+
+.Koleksi-button {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  margin: 50px 0 0;
+  background: #2081E2;
+  border: 0;
+  padding: 15px 50px;
+  
+}
+
+.Koleksi-button:hover {
+  background: #3C8FE2;
+  box-shadow: 0 0 15px #bbb;
+}
+
+/* ASIDE */
+aside {
+  background: white;
+  justify-content: center;
+  display: none;
+}
+
+.biography-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+ 
+}
+
+.biography-card:hover {
+  box-shadow: 0 0 15px #bbb;
+}
+
+.profile-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.biography-card h3 {
+  color: black;
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+.biography-card p {
+  padding: 2px;
+}
+
+.contact {
+  margin: 20px 10px;
+}
+
+.social-media {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  aside {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  aside {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1024) {
+  aside {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+  }
+}
+
+/* FOOTER */
+footer {
+  background: white;
+  text-align: center;
+  padding: 30px 0 30px;
+}
